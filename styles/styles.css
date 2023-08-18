@@ -5,6 +5,7 @@
 
 body {
   font-family: 'iranyekanwebregular', Arial, Helvetica, sans-serif
+  
  
 }
 header {
@@ -153,12 +154,12 @@ header {
 .product-menu {
     position: absolute;
     top: 0;
-    left: -165px;
+    left: -195px;
     background-color: #fff;
     display: none;
     justify-content: flex-start;
     width: 421px;
-    height: 285px;
+    height: 245px;
     border-top: 5px solid #f8e88b;
     border-radius: 12px;
     padding-top: 20px;
@@ -174,11 +175,158 @@ header {
     font-size: 0.6rem;
 }
 .product-menu a {
-    margin: 10px;
+    margin: 0 10px;
     display: block;
     padding: 10px;
     border-radius: 5px;
 }
+.banner {
+    width: 1050px;
+    padding: 124px 60px 80px;
+    background-image: linear-gradient(135deg, #21254e, #2b4a83);
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-text h3 {
+    font-family: YekanBakhHeavy;
+    font-size: 2rem;
+    color: #fff;
+}
+.banner-text p {
+    color: #fff;
+    font-size: 1.15rem;
+    margin: 25px 0;
+    line-height: 2.5rem;
+}
+.banner-image img {
+    width: 500px;
+}
+.banner-button {
+    margin-top: 60px;
+}
+.register {
+    font-size: 1rem;
+    font-family: YekanBakhBold;
+    color: #000;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+   
+}
+.login {
+    font-size: 1rem;
+    font-family: YekanBakhBold;
+    color: #ffd900;
+    background-color: #435a8a;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.go-down {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 58px;
+}
+.go-down div {
+    background-image: url(/images/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+}
+.go-down img {
+    width: 15px;
+    position: relative;
+    top: -60px;
+}
+
+.online-payment {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+.online-payment img {
+    width: 450px;
+    height: 480px;
+    margin: 0;
+    
+}
+.section-text {
+    margin: 30px 0;
+    width: 550px;
+}
+.section-text h2 {
+    color: #747480;
+    font-family: YekanBakhMedium;
+    font-weight: 100;
+    font-size: 1.4rem;
+    margin: 20px 0 5px;
+}
+.section-text h3 {
+    color: #303030;
+    font-family: YekanBakhHeavy;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 10px 0 10px;
+}
+.section-text p {
+    color: #303030;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 0.5erm;
+    text-align: justify;
+    letter-spacing: -.5px
+}
+.section-text .line {
+    height: 1px;
+    background-color: #dfe1e4;
+    width: 100%;
+    margin: 20px 0;
+}
+.section-button {
+    margin-top: 40px;
+    display: flex;
+}
+.first-button {
+    font-size: 0.9rem;
+    font-family: iranyekanwebmedium;
+    color: #000;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+   
+}
+.second-button {
+    display: block;
+    font-size: 0.9rem;
+    font-family: iranyekanwebmedium;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.7);
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.second-button img {
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+}
+
 
 @keyframes fadeIndown {
     0% {
@@ -203,6 +351,16 @@ header {
     header {
         width: 940px;
     }
+    .banner {
+        width: 900px;
+        padding: 60px 40px 120px;
+    }
+    .banner-image img {
+        width: 430px;
+    }
+    .online-payment {
+        width: 740px;
+    }
 }
 @media (max-width: 990px) {
     header {
@@ -218,6 +376,33 @@ header {
     .header-ul li {
         margin: 0 10px;
     }
+    .banner {
+        width: auto;
+        padding: 40px 40px 85px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .banner-image img {
+        display: none;
+    }
+    .banner-text {
+        text-align: center;
+    }
+    .banner-text p {
+        margin: 5px 0;
+    }
+    .banner-button {
+        margin-top: 40px;
+        font-size: 1rem;
+    }
+    .online-payment {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-text {
+        width: 95%;
+    }
 }
 @media (max-width:768px) {
     .header-ul {
@@ -229,5 +414,40 @@ header {
     }
     .hamburger-icon {
         display: block;
+    }
+    .banner {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .section-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-payment .section-image {
+        width: 460px;
+        height: 480px;
+    }
+}
+@media (max-width:575px) {
+    .banner {
+        padding: 80px 40px;
+    }
+    .banner-text h3 {
+        font-size: 1.2rem;
+        text-align: right;
+    }
+    .banner-text p {
+        text-align: justify;
+    }
+    .online-payment .section-image {
+        display: none;
+    }
+    .section-text {
+        width: 80%;
+        padding: 0 10px;
+    }
+    .section-text h3 {
+        font-size: 1.5rem;
     }
 }
